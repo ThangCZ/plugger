@@ -6,6 +6,8 @@ class Plugger
     
 end
 
+require 'rails/generators'
+
 module Rails
   module Generators
     
@@ -35,7 +37,6 @@ module Rails
   end
 end
 
-require 'rails/generators'
 require 'active_support/dependencies'
 
 Dir["#{Dir.pwd}/vendor/plugins/*/init.rb"].each do |f|
